@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Hospital Management System</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="logo.png" alt="Logo" width="50"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Index 16.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" >About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Content</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="paymentDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Payment</a>
+                        <div class="dropdown-menu" aria-labelledby="paymentDropdown">
+                            <a class="dropdown-item d-flex" href="./payment.html">
+                                <img src="PayPal.png" alt="Logo" width="50">
+                                <p>Paypal</p>
+                            </a>
+                            <a class="dropdown-item d-flex" href="./payment.html">
+                                <img src="credit-card.png" alt="Logo" width="50">
+                                <p>Card</p>
+                            </a>
+                            <a class="dropdown-item d-flex" href="./payment.html">
+                                <img src="bank-transfer.png" alt="Logo" width="50">
+                                <p>Banktransfer</p>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <form class="form-inline">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                  </svg>
+                            </button>
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-primary mx-1" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Login</button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="recipient-name" class="col-form-label">Email:</label>
+                                                <input type="email" class="form-control" id="recipient-name">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="message-text" class="col-form-label">password:</label>
+                                                <input type="password" class="form-control" id="recipient-name">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <a href="registerpatient.html" class="btn btn-secondary">Register</a>
+                                        <button type="button" class="btn btn-primary">Login</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Content for Home Page -->
+    <section id="home" class="content-section my-4">
+        <div class="home-background">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="hospital-image.jpg" alt="Hospital" class="img-fluid">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="home-content text-center text-md-left">
+                            <h2>Welcome to Hospital Management System</h2>
+                            <p>Efficiently manage your hospital operations with our user-friendly system.</p>
+                            <a href="learn.html" target="_self" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Key Features Section -->
+    <section id="features" class="bg-secondary text-white py-5">
+        <div class="container">
+            <h2 class="text-center">Key Features</h2>
+            <div class="row">
+                <!-- <div class="col-md-3">
+                    <div class="feature-column text-center p-3 bg-dark">
+                        <i class="fas fa-user-md fa-3x mb-3"></i>
+                        <h3>Manage Patients</h3>
+                        <p>Efficiently manage patient records and information.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="feature-column text-center p-3 bg-dark">
+                        <i class="fas fa-user-nurse fa-3x mb-3"></i>
+                        <h3>Doctors' Dashboard</h3>
+                        <p>Allow doctors to access patient data and appointments.</p>
+                    </div>
+                </div> -->
+                <div class="col-md-6">
+                    <a class="nav-link" href="appointment_page.html">
+                        <div class="feature-column text-center p-3 bg-dark">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-calendar-check" viewBox="0 0 16 16">
+                                <path d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                              </svg>
+                            <h3>Appointment Scheduling</h3>
+                            <p>Streamline appointment scheduling and reminders.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6">
+                    <a class="nav-link" href="reports_page.html">    
+                        <div class="feature-column text-center p-3 bg-dark">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-clipboard2-pulse" viewBox="0 0 16 16">
+                                <path d="M9.5 0a.5.5 0 0 1 .5.5.5.5 0 0 0 .5.5.5.5 0 0 1 .5.5V2a.5.5 0 0 1-.5.5h-5A.5.5 0 0 1 5 2v-.5a.5.5 0 0 1 .5-.5.5.5 0 0 0 .5-.5.5.5 0 0 1 .5-.5h3Z"/>
+                                <path d="M3 2.5a.5.5 0 0 1 .5-.5H4a.5.5 0 0 0 0-1h-.5A1.5 1.5 0 0 0 2 2.5v12A1.5 1.5 0 0 0 3.5 16h9a1.5 1.5 0 0 0 1.5-1.5v-12A1.5 1.5 0 0 0 12.5 1H12a.5.5 0 0 0 0 1h.5a.5.5 0 0 1 .5.5v12a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5v-12Z"/>
+                                <path d="M9.979 5.356a.5.5 0 0 0-.968.04L7.92 10.49l-.94-3.135a.5.5 0 0 0-.926-.08L4.69 10H4.5a.5.5 0 0 0 0 1H5a.5.5 0 0 0 .447-.276l.936-1.873 1.138 3.793a.5.5 0 0 0 .968-.04L9.58 7.51l.94 3.135A.5.5 0 0 0 11 11h.5a.5.5 0 0 0 0-1h-.128L9.979 5.356Z"/>
+                              </svg>
+                            <h3>Generate Reports</h3>
+                            <p>Generate reports and insights for better decision-making.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p id="datetime">Hospital Management System</p>
+    </footer>
+
+    <!-- Bootstrap JS Scripts -->
+    
+    <script>
+        function updateDateTime() {
+            const datetimeElement = document.getElementById('datetime');
+            setInterval(() => {
+                const now = new Date();
+                const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric' };
+                const formattedDate = now.toLocaleDateString(undefined, options);
+                datetimeElement.textContent = formattedDate;
+            }, 1000);
+        }
+
+        updateDateTime();
+    </script>
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+</body>
+</html>
